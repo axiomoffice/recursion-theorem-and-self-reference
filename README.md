@@ -395,7 +395,7 @@ $$
 | $\varphi_{\varphi_e(0)}=\varphi_{F(\varphi_d(0))}$ | $\varphi_{\varphi_e(1)}=\varphi_{F(\varphi_d(1))}$ | ... | $\varphi_{\varphi_e(j)}=\varphi_{F(\varphi_d(j))}$ | ... |
 | ... | ... | ... | ... | ... |
 
-现在考察矩阵的第 $e$ 列。
+第 $e$ 行是否保证了与第 $d$ 行处处不同？别急，先考察矩阵的第 $e$ 列。
 
 | 第 0 列 | 第 1 列 | ... | 第 e 列 | ... |
 | --- | --- | --- | --- | --- |
@@ -407,10 +407,10 @@ $$
 | $\varphi_{\varphi_e(0)}=\varphi_{F(\varphi_d(0))}$ | $\varphi_{\varphi_e(1)}=\varphi_{F(\varphi_d(1))}$ | ... | $\varphi_{\varphi_e(e)}=\varphi_{F(\varphi_d(e))}$ | ... |
 | ... | ... | ... | ... | ... |
 
-令 $p=\varphi_d(e)$。根据表格中的等式，我们有
+令 $p=\varphi_d(e)$。根据表格中的等式，有
 
 $$
-\varphi_p(x)=\varphi_{F(p)}(x).
+\varphi_p=\varphi_{F(p)}.
 $$
 
 我们意外地发现：存在一个程序编号 $p$，使得程序 $p$ 与编号 $F(p)$ 所对应的程序计算完全相同。

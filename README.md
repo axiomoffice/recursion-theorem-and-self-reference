@@ -378,7 +378,7 @@ $$
 | $\varphi_{\varphi_0(0)}$ | $\varphi_{\varphi_0(1)}$ | ... | $\varphi_{\varphi_0(j)}$ | ... |
 | $\varphi_{\varphi_1(0)}$ | $\varphi_{\varphi_1(1)}$ | ... | $\varphi_{\varphi_1(j)}$ | ... |
 | ... | ... | ... | ... | ... |
-| $\varphi_{\varphi_d(0)}$ | $\varphi_{\varphi_d(1)}$ | ... | $\varphi_{\varphi_d(j)}$ | ... |
+| $\varphi_{\varphi_d(0)}=\varphi_{\varphi_0(0)}$ | $\varphi_{\varphi_d(1)}=\varphi_{\varphi_1(1)}$ | ... | $\varphi_{\varphi_d(j)}=\varphi_{\varphi_j(j)}$ | ... |
 | ... | ... | ... | ... | ... |
 
 到这里一切顺利。接下来，我们像普通的对角线论证一样，尝试对对角线上的每个函数做“取反”操作。这个操作可以在程序编号上进行：设 $F$ 是一个可计算全函数，它把程序编号变换成另一个程序编号。我们可以把它想象成这样一种操作：给一个程序添加一条取反指令，使它在原程序输出 $0$ 时输出 $1$，在原程序输出非零时输出 $0$。
@@ -390,9 +390,9 @@ $$
 | $\varphi_{\varphi_0(0)}$ | $\varphi_{\varphi_0(1)}$ | ... | $\varphi_{\varphi_0(j)}$ | ... |
 | $\varphi_{\varphi_1(0)}$ | $\varphi_{\varphi_1(1)}$ | ... | $\varphi_{\varphi_1(j)}$ | ... |
 | ... | ... | ... | ... | ... |
-| $\varphi_{\varphi_d(0)}$ | $\varphi_{\varphi_d(1)}$ | ... | $\varphi_{\varphi_d(j)}$ | ... |
+| $\varphi_{\varphi_d(0)}=\varphi_{\varphi_0(0)}$ | $\varphi_{\varphi_d(1)}=\varphi_{\varphi_1(1)}$ | ... | $\varphi_{\varphi_d(j)}=\varphi_{\varphi_j(j)}$ | ... |
 | ... | ... | ... | ... | ... |
-| $\varphi_{\varphi_e(0)}$ | $\varphi_{\varphi_e(1)}$ | ... | $\varphi_{\varphi_e(j)}$ | ... |
+| $\varphi_{\varphi_e(0)}=\varphi_{F(\varphi_d(0))}$ | $\varphi_{\varphi_e(1)}=\varphi_{F(\varphi_d(1))}$ | ... | $\varphi_{\varphi_e(j)}=\varphi_{F(\varphi_d(j))}$ | ... |
 | ... | ... | ... | ... | ... |
 
 现在考察矩阵的第 $e$ 列。
@@ -402,28 +402,12 @@ $$
 | $\varphi_{\varphi_0(0)}$ | $\varphi_{\varphi_0(1)}$ | ... | $\varphi_{\varphi_0(e)}$ | ... |
 | $\varphi_{\varphi_1(0)}$ | $\varphi_{\varphi_1(1)}$ | ... | $\varphi_{\varphi_1(e)}$ | ... |
 | ... | ... | ... | ... | ... |
-| $\varphi_{\varphi_d(0)}$ | $\varphi_{\varphi_d(1)}$ | ... | $\varphi_{\varphi_d(e)}$ | ... |
+| $\varphi_{\varphi_d(0)}=\varphi_{\varphi_0(0)}$ | $\varphi_{\varphi_d(1)}=\varphi_{\varphi_1(1)}$ | ... | $\varphi_{\varphi_d(e)}=\varphi_{\varphi_e(e)}$ | ... |
 | ... | ... | ... | ... | ... |
-| $\varphi_{\varphi_e(0)}$ | $\varphi_{\varphi_e(1)}$ | ... | $\varphi_{\varphi_e(e)}$ | ... |
+| $\varphi_{\varphi_e(0)}=\varphi_{F(\varphi_d(0))}$ | $\varphi_{\varphi_e(1)}=\varphi_{F(\varphi_d(1))}$ | ... | $\varphi_{\varphi_e(e)}=\varphi_{F(\varphi_d(e))}$ | ... |
 | ... | ... | ... | ... | ... |
 
-令 $p=\varphi_d(e)$。根据前面得到的对角线等式 $\varphi_{\varphi_d(i)}=\varphi_{\varphi_i(i)}$，我们有
-
-$$
-\begin{aligned}
-\varphi_p(x)
-&=\varphi_{\varphi_d(e)}(x)\\
-&=\varphi_{\varphi_e(e)}(x).
-\end{aligned}
-$$
-
-而根据程序 $e$ 的定义，
-
-$$
-\varphi_e(e)=F(\varphi_d(e))=F(p).
-$$
-
-代入上式，就得到
+令 $p=\varphi_d(e)$。根据表格中的等式，我们有
 
 $$
 \varphi_p(x)=\varphi_{F(p)}(x).

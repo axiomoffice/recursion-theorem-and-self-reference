@@ -428,3 +428,7 @@ $$
 ## 处理抽象：计算复杂性理论的公理化
 ## 不动点的消失：Arslanov 完备性准则
 ## 参考文献
+
++ https://link.springer.com/book/10.1007/978-3-642-31933-4
++ https://en.wikipedia.org/wiki/Rice–Shapiro_theorem
++ https://dl.acm.org/doi/10.1145/321386.321395

@@ -695,5 +695,7 @@ Rice-Shapiro 定理揭示了一个重要的事实：**如果某种程序语义�
 ## 参考文献
 
 + https://link.springer.com/book/10.1007/978-3-642-31933-4
++ https://en.wikipedia.org/wiki/Quine_(computing)
 + https://en.wikipedia.org/wiki/Rice–Shapiro_theorem
++ https://www.sciencedirect.com/science/article/pii/S0019995867905463
 + https://dl.acm.org/doi/10.1145/321386.321395
